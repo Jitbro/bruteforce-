@@ -32,7 +32,7 @@ if __name__ == "__main__":
     import string
 
     # Simulate a target password (SHA-256 hash of "abc123")
-    target_password = input("")
+    target_password = input("Target: ")
     target_hash = hashlib.sha256(target_password.encode()).hexdigest()
 
     # Run the cracker with constraints (max_length=4)
